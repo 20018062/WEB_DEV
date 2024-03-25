@@ -27,10 +27,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = [
-    'web-dev-vfnz.onrender.com',  # Add this host
-    # ...other allowed hosts
-]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -82,14 +79,14 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
-DATABASES["default"] = dj_database_url.parse("postgres://users_574q_user:DFgFQQJpNpmuviOEb0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a/users_574q")
+DATABASES = {"default" : dj_database_url.parse("postgres://users_574q_user:DFgFQQJpNpmuviOEb0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a.oregon-postgres.render.com/users_574q")}
 # postgres://users_574q_user:DFgFQQJpNpmuviOE0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a.oregon-postgres.render.com/users_574q
 
 
@@ -123,7 +120,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
