@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #     }
 # }
 
-DATABASES = {"default" : dj_database_url.parse("postgres://users_574q_user:DFgFQQJpNpmuviOEb0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a.oregon-postgres.render.com/users_574q")}
+DATABASES = {"default" : dj_database_url.parse("postgres://users_574q_user:DFgFQQJpNpmuviOEb0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a/users_574q")}
 # postgres://users_574q_user:DFgFQQJpNpmuviOE0zBm47HdAzSN6JH@dpg-co07r121hbls73br5arg-a.oregon-postgres.render.com/users_574q
 
 
